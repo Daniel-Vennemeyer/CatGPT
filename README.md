@@ -11,7 +11,7 @@ This project fine-tunes a GPT-2 language model on parsed Discord messages to emu
    - **Reason**: GPT-2’s architecture supports transfer learning on custom datasets, and its manageable size allows for feasible deployment on most hardware while retaining enough capacity to capture intricate conversational patterns.
 
 ### 2. **Intentional Overfitting**
-   - **Choice**: The training strategy involves deliberately overfitting the model by running through many epochs (50) with a small batch size (1).
+   - **Choice**: The training strategy involves deliberately overfitting the model by running through many epochs (100) with a small batch size (2).
    - **Reason**: Overfitting was used to ensure that the model memorizes the specific conversational style and phrases from the dataset. This approach is suitable for stylistic emulation since we want the model to respond in a precise, personalized manner rather than generalizing across various conversation styles.
 
 ### 3. **Training Parameters**
